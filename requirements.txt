@@ -1,0 +1,6 @@
+pandas
+numpy
+streamlit
+streamlit-antd-components
+streamlit_modal
+watchdog

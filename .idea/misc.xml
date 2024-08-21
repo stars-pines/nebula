@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Black">
+    <option name="sdkName" value="Python 3.11 (nebula)" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="4ba983d6-2d12-407d-8a6b-0e603cb8251c" />
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.11 (nebula)" project-jdk-type="Python SDK" />
+</project>
