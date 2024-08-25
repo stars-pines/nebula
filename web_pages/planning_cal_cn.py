@@ -11,7 +11,9 @@ def app():
         st.markdown('2️⃣:blue[**让您更省事**] ')
 
         st.subheader(':rainbow[**提供给您帮助**]', divider='rainbow')
-        st.link_button(':rainbow[**GitHub**]😆:rainbow[**欢迎留言交流**]',url='https://github.com/stars-pines/nebula/issues')
+        st.link_button(':rainbow[**GitHub**]😆:rainbow[**欢迎留言交流**]',
+                       url='https://github.com/stars-pines/nebula/issues',
+                       help='请描述您的行业、采购方式', use_container_width=True)
         with st.expander(':blue[**其他联系方式**]', expanded=True, icon='✅'):
             st.markdown(':rainbow[**邮箱: stars-pine@qq.com**] ')
             st.markdown(':rainbow[**QQ: 2665073539**] ')

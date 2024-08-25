@@ -12,9 +12,11 @@ def app():
 
         st.subheader(':rainbow[**To help you**]', divider='rainbow')
         st.link_button(':rainbow[**GitHub**]😆:rainbow[**Welcome to communicate**]',
-                       url='https://github.com/stars-pines/nebula/issues')
+                       url='https://github.com/stars-pines/nebula/issues',
+                       help='Please describe your industry and procurement method',
+                       use_container_width=True)
         st.link_button(':rainbow[**YouTube**]😃:rainbow[**Our videos**]',
-                       url='https://www.youtube.com/@qingjing-b2z')
+                       url='https://www.youtube.com/@qingjing-b2z', use_container_width=True)
         with st.expander(':blue[**Other contact information**]',expanded=True,icon='✅'):
             st.markdown(':rainbow[**Email: stars-pine@qq.com**] ')
             st.markdown(':rainbow[**QQ: 2665073539**] ')
