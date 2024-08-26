@@ -30,11 +30,12 @@ def app():
     with sc1_1:
         with st.container():
             st.header(':rainbow[提供给你计算工具]💻', divider=True)
-            st.markdown('1️⃣:rainbow[**快速算出最优方案**]📜')
-            st.markdown('2️⃣:rainbow[**提供能量流向图 - 帮助你理解数据走势**]😆')
-            st.markdown('3️⃣:rainbow[**程序仅在你本地运行**]😉')
-            st.markdown('4️⃣:rainbow[**数据不会上传 - 放心使用**]📘')
-            st.markdown('5️⃣:rainbow[**使用最常见的办公工具 - 平滑过渡**]💹')
+            st.markdown('1️⃣:rainbow[**快速算出最优方案，可配合Excel使用**]💹')
+            st.markdown('3️⃣:rainbow[**程序仅在你本地运行，数据不会上传 - 放心使用**]😉')
+
+            st.header(':rainbow[适用企业]🏣', divider=True)
+            st.markdown('1️⃣:rainbow[**涉及采购原材料进行加工的加工型企业**]🏭')
+            st.markdown('3️⃣:rainbow[**需要精准控制成本的公司**]💰')
     with sc1_2:
         st.image('resource/images/cn/cooperation_method.png', output_format='PNG', use_column_width='auto')
 

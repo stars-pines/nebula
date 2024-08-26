@@ -32,12 +32,13 @@ def app():
     sc1_1, sc1_2 = st.columns(2)
     with sc1_1:
         with st.container():
-            st.header(':rainbow[Give you the calculation tools]💻', divider=True)
-            st.markdown('1️⃣:rainbow[**Quickly figure out the best solution**]📜')
-            st.markdown('2️⃣:rainbow[**provides energy flow graphs - to help you understand data movements**]😆')
-            st.markdown('3️⃣:rainbow[**The program runs only locally**]😉')
-            st.markdown('4️⃣:rainbow[**Data will not be uploaded - please feel free to use it**]📘')
-            st.markdown('5️⃣:rainbow[**Use the most common office tool - Smooth transition**]💹')
+            st.header(':rainbow[Offer you calculation tools]💻', divider=True)
+            st.markdown('1️⃣:rainbow[**Quickly calculate the optimal solution, can be used in conjunction with Excel**]💹')
+            st.markdown('3️⃣:rainbow[**The program only runs locally and data will not be uploaded. Please feel free to use it.**]😉')
+
+            st.header(':rainbow[Scope of application]🏣', divider=True)
+            st.markdown('1️⃣:rainbow[**Enterprises engaged in the processing of purchased raw materials**]🏭')
+            st.markdown('3️⃣:rainbow[**Companies Requiring Precise Cost Control**]💰')
     with sc1_2:
         st.image('resource/images/en/cooperation_method.png', output_format='PNG', use_column_width='auto')
 
