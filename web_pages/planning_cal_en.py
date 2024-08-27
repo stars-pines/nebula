@@ -16,7 +16,7 @@ def app():
                        help='Please describe your industry and procurement method',
                        use_container_width=True)
         st.link_button(':rainbow[**YouTube**]😃:rainbow[**Our videos**]',
-                       url='https://www.youtube.com/@qingjing-b2z', use_container_width=True)
+                       url='https://www.youtube.com/@qingjing-b2z/videos', use_container_width=True)
         with st.expander(':blue[**Other contact information**]',expanded=True,icon='✅'):
             st.markdown(':rainbow[**Email: stars-pine@qq.com**] ')
             st.markdown(':rainbow[**QQ: 2665073539**] ')
