@@ -11,7 +11,7 @@ def app():
         st.markdown('2️⃣:blue[**Allowing you to save more effort**] ')
 
         st.subheader(':rainbow[**To help you**]', divider='rainbow')
-        st.link_button(':rainbow[**GitHub**]😆:rainbow[**Welcome to communicate**]',
+        st.link_button(':rainbow[**GitHub-issue**]😆:rainbow[**Welcome to communicate**]',
                        url='https://github.com/stars-pines/nebula/issues',
                        help='Please describe your industry and procurement method',
                        use_container_width=True)
@@ -27,7 +27,7 @@ def app():
             with sc0_2:
                 st.markdown(':rainbow[**TikTok：**] ')
                 st.image('resource/images/en/tiktok_QR.png', output_format='PNG', use_column_width='auto')
-
+    sac.alert(label='Perhaps it represents a novel approach to boosting profits', banner=True, icon=True, closable=True)
     st.image('resource/images/en/title.png', output_format='PNG', use_column_width='auto')
     sc1_1, sc1_2 = st.columns(2)
     with sc1_1:
