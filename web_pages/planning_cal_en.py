@@ -1,5 +1,6 @@
 import streamlit as st
 import streamlit_antd_components as sac
+import streamlit.components.v1 as components
 
 
 def app():
@@ -11,13 +12,7 @@ def app():
         st.markdown('2️⃣:blue[**Allowing you to save more effort**] ')
 
         st.subheader(':rainbow[**To help you**]', divider='rainbow')
-        st.link_button(':rainbow[**GitHub-issue**]😆:rainbow[**Welcome to communicate**]',
-                       url='https://github.com/stars-pines/nebula/issues',
-                       help='Please describe your industry and procurement method',
-                       use_container_width=True)
-        st.link_button(':rainbow[**YouTube**]😃:rainbow[**Our videos**]',
-                       url='https://www.youtube.com/@qingjing-b2z/videos', use_container_width=True)
-        with st.expander(':blue[**Other contact information**]',expanded=True,icon='✅'):
+        with st.expander(':blue[**Other contact information**]', expanded=True, icon='✅'):
             st.markdown(':rainbow[**Email: stars-pine@qq.com**] ')
             st.markdown(':rainbow[**QQ: 2665073539**] ')
             sc0_1, sc0_2 = st.columns(2)
@@ -27,14 +22,28 @@ def app():
             with sc0_2:
                 st.markdown(':rainbow[**TikTok：**] ')
                 st.image('resource/images/en/tiktok_QR.png', output_format='PNG', use_column_width='auto')
-    sac.alert(label='Perhaps it represents a novel approach to boosting profits', banner=True, icon=True, closable=True)
+    sc2_1, sc2_2, sc2_3 = st.columns(3)
+    with sc2_1:
+        sac.alert(label='Perhaps it represents a novel approach to boosting profits',
+                  banner=True, icon=True, closable=True)
+    with sc2_2:
+        st.link_button(':rainbow[**GitHub-Discussions**]😆:rainbow[**Quick contact**]',
+                       url='https://github.com/stars-pines/nebula/discussions',
+                       help='Please describe your industry and procurement method',
+                       use_container_width=True)
+    with sc2_3:
+        st.link_button(':rainbow[**YouTube**]😃:rainbow[**Our videos**]',
+                       url='https://www.youtube.com/@qingjing-b2z/videos', use_container_width=True)
+
     st.image('resource/images/en/title.png', output_format='PNG', use_column_width='auto')
     sc1_1, sc1_2 = st.columns(2)
     with sc1_1:
         with st.container():
             st.header(':rainbow[Offer you calculation tools]💻', divider=True)
-            st.markdown('1️⃣:rainbow[**Quickly calculate the optimal solution, can be used in conjunction with Excel**]💹')
-            st.markdown('3️⃣:rainbow[**The program only runs locally and data will not be uploaded. Please feel free to use it.**]😉')
+            st.markdown(
+                '1️⃣:rainbow[**Quickly calculate the optimal solution, can be used in conjunction with Excel**]💹')
+            st.markdown(
+                '3️⃣:rainbow[**The program only runs locally and data will not be uploaded. Please feel free to use it.**]😉')
 
             st.header(':rainbow[Scope of application]🏣', divider=True)
             st.markdown('1️⃣:rainbow[**Enterprises engaged in the processing of purchased raw materials**]🏭')
@@ -60,6 +69,8 @@ def app():
         with sc2:
             st.subheader('2️⃣:rainbow[**simplify matters**]')
             st.image('resource/images/en/gain_reduces_time.png', output_format='auto', use_column_width='auto')
+
+        # components.iframe("https://www.youtube.com/embed/b2OI2IM9hms?si=KuMr7HKt7tYlp228", height=500)
 
         st.header(':blue[Operation demonstration]🖥️', divider='rainbow')
         st.subheader('1️⃣:rainbow[**Easy to use steps.**]')

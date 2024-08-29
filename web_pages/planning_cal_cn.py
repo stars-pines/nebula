@@ -10,9 +10,6 @@ def app():
         st.markdown('2️⃣:blue[**让您更省事**] ')
 
         st.subheader(':rainbow[**提供给您帮助**]', divider='rainbow')
-        st.link_button(':rainbow[**GitHub-issue**]😆:rainbow[**欢迎留言交流**]',
-                       url='https://github.com/stars-pines/nebula/issues',
-                       help='请描述您的行业、采购方式', use_container_width=True)
         with st.expander(':blue[**其他联系方式**]', expanded=True, icon='✅'):
             st.markdown(':rainbow[**邮箱: stars-pine@qq.com**] ')
             st.markdown(':rainbow[**QQ: 2665073539**] ')
@@ -23,7 +20,14 @@ def app():
             with sc0_2:
                 st.markdown(':rainbow[**抖音：**] ')
                 st.image('resource/images/cn/tiktok_QR.png', output_format='PNG', use_column_width='auto')
-    sac.alert(label='或许是一个新的提升利润的思路', banner=True, icon=True, closable=True)
+
+    sc2_1, sc2_2 = st.columns(2)
+    with sc2_1:
+        sac.alert(label='或许是一个新的提升利润的思路', banner=True, icon=True, closable=True)
+    with sc2_2:
+        st.link_button(':rainbow[**GitHub-Discussions**]😆:rainbow[**快捷联系**]',
+                       url='https://github.com/stars-pines/nebula/discussions',
+                       help='请描述您的行业、采购方式', use_container_width=True)
 
     st.image('resource/images/cn/title.png', output_format='PNG', use_column_width='auto')
     sc1_1, sc1_2 = st.columns(2)
